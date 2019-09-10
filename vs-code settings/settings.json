@@ -1,129 +1,129 @@
 {
-    "breadcrumbs.enabled": true,
-    "code-runner.runInTerminal": true,
-    "cSpell.enabledLanguageIds": [
-        "asciidoc",
-        "c",
-        "cpp",
-        "csharp",
-        "css",
-        "go",
-        "handlebars",
-        "html",
-        "jade",
-        "java",
-        "javascript",
-        "javascriptreact",
-        "json",
-        "jsonc",
-        "latex",
-        "less",
-        "markdown",
-        "php",
-        "plaintext",
-        "pug",
-        "python",
-        "restructuredtext",
-        "rust",
-        "scala",
-        "scss",
-        "text",
-        "typescript",
-        "typescriptreact",
-        "vue",
-        "yaml",
-        "yml"
-    ],
-    "editor.lineNumbers": "on",
-    "editor.renderWhitespace": "all",
-    "editor.renderControlCharacters": true,
-    "editor.detectIndentation": true,
-    "editor.renderIndentGuides": false,
-    "editor.fontLigatures": true,
-    "editor.formatOnSave": true,
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": true,
-        "strings": true
+  "breadcrumbs.enabled": true,
+  "code-runner.runInTerminal": true,
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "yaml",
+    "yml"
+  ],
+  "editor.lineNumbers": "on",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.detectIndentation": true,
+  "editor.renderIndentGuides": false,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "html",
+      "autoFix": true
     },
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "extensions.ignoreRecommendations": false,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        {
-            "language": "html",
-            "autoFix": true
-        },
-        {
-            "language": "vue",
-            "autoFix": true
-        }
-    ],
-    "eslint.options": {
-        "plugins": ["html"]
-    },
-    "eslint.autoFixOnSave": true, // 每次保存的时候将代码按eslint格式进行修复
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
-    "git.path": "E:\\Tools\\Git\\cmd\\git.exe",
-    "html.format.endWithNewline": true,
-    "json.format.enable": false,
-    "javascript.preferences.quoteStyle": "single",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "prettier.eslintIntegration": true, // 让prettier使用eslint的代码格式进行校验
-    "prettier.tabWidth": 2,
-    "prettier.semi": false, // 去掉代码结尾的分号
-    "prettier.singleQuote": true, // 使用单引号代替双引号
-    "sync.autoDownload": false,
-    "sync.autoUpload": false,
-    "terminal.integrated.fontFamily": "monospace",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "todo-tree.defaultHighlight": {
-        "foreground": "green",
-        "type": "none"
-    },
-    "todo-tree.customHighlight": {
-        "TODO": {},
-        "FIXME": {}
-    },
-    "todohighlight.isEnable": false,
-    "terminal.integrated.shell.windows": "cmd.exe",
-    "terminal.integrated.shellArgs.windows": [
-        "/k",
-        "E:\\Tools\\cmder\\vendor\\init.bat"
-    ],
-    "terminal.integrated.rendererType": "dom",
-    "vetur.validation.template": false,
-    "vetur.format.options.tabSize": 2,
-    "vetur.format.options.useTabs": false,
-    "vetur.format.defaultFormatter.html": "prettyhtml",
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    "vetur.format.defaultFormatter.ts": "prettier",
-    "vetur.format.defaultFormatter.scss": "prettier",
-    "vetur.format.defaultFormatter.less": "prettier",
-    "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
-    "vetur.format.defaultFormatterOptions": {
-        "js-beautify-html": {
-            "wrap_attributes": "force-aligned" //属性强制折行对齐
-        },
-        "prettier": {
-            "semi": false,
-            "singleQuote": true
-        },
-        "prettyhtml": {
-            "printWidth": 100, // No line exceeds 100 characters
-            "singleQuote": false // Prefer double quotes over single quotes
-        }
-    },
-    "window.zoomLevel": 0.2,
-    "workbench.colorTheme": "One Dark Pro Italic",
-    "workbench.editor.enablePreview": false,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "language": "vue",
+      "autoFix": true
     }
+  ],
+  "eslint.options": {
+    "plugins": ["html"]
+  },
+  "eslint.autoFixOnSave": true, // 每次保存的时候将代码按eslint格式进行修复
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "git.path": "E:\\Tools\\Git\\cmd\\git.exe",
+  "html.format.endWithNewline": true,
+  "json.format.enable": false,
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // "prettier.eslintIntegration": true, // 让prettier使用eslint的代码格式进行校验
+  "prettier.tabWidth": 2,
+  "prettier.semi": false, // 去掉代码结尾的分号
+  "prettier.singleQuote": true, // 使用单引号代替双引号
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "terminal.integrated.fontFamily": "monospace",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "todo-tree.defaultHighlight": {
+    "foreground": "green",
+    "type": "none"
+  },
+  "todo-tree.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  },
+  "todohighlight.isEnable": false,
+  "terminal.integrated.shell.windows": "cmd.exe",
+  "terminal.integrated.shellArgs.windows": [
+    "/k",
+    "E:\\Tools\\cmder\\vendor\\init.bat"
+  ],
+  "terminal.integrated.rendererType": "dom",
+  "vetur.validation.template": false,
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.options.useTabs": false,
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.less": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-aligned" //属性强制折行对齐
+    },
+    "prettier": {
+      "semi": false,
+      "singleQuote": true
+    },
+    "prettyhtml": {
+      "printWidth": 100, // No line exceeds 100 characters
+      "singleQuote": false // Prefer double quotes over single quotes
+    }
+  },
+  "window.zoomLevel": 0.2,
+  "workbench.colorTheme": "One Dark Pro Italic",
+  "workbench.editor.enablePreview": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
