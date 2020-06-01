@@ -74,15 +74,17 @@
   "html.format.endWithNewline": false,
   "json.format.enable": false,
   "javascript.preferences.quoteStyle": "single",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.updateImportsOnFileMove.enabled": "always", 
+  "javascript.format.insertSpaceAfterConstructor": false,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false, // 让函数(名)和后面的括号之间加个空格
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
   "prettier.printWidth": 120, // 超过最大值换行
   "prettier.tabWidth": 2, // 缩进字节数
   // "prettier.useTabs": false, // 缩进不使用tab，使用空格
   "prettier.semi": false, // 句尾添加分号
   "prettier.singleQuote": true, // 使用单引号代替双引号
   "prettier.proseWrap": "preserve", // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
-  "prettier.arrowParens": "avoid", // (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+  "prettier.arrowParens": "always", // (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
   "prettier.bracketSpacing": true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
   // "prettier.disableLanguages": ["vue"], // 不格式化vue文件，vue文件的格式化单独设置
   "prettier.endOfLine": "auto", // 结尾是 \n \r \n\r auto
@@ -96,18 +98,14 @@
   "sync.autoUpload": false,
   "terminal.integrated.fontFamily": "monospace",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.shell.windows": "cmd.exe",
-  "terminal.integrated.shellArgs.windows": [
-    "/k",
-    "E:\\Tools\\cmder\\vendor\\init.bat"
-  ],
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "terminal.integrated.shellArgs.windows": ["/k", "E:\\Tools\\cmder\\vendor\\init.bat"],
   "terminal.integrated.rendererType": "dom",
   "vetur.format.options.tabSize": 2,
   "vetur.format.options.useTabs": false,
   "vetur.validation.template": false,
-  "vetur.format.defaultFormatter.html": "prettier",
   "vetur.format.defaultFormatter.js": "vscode-typescript",
-  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
   "vetur.format.defaultFormatter.less": "prettier",
   "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
   "vetur.format.defaultFormatterOptions": {
@@ -117,18 +115,31 @@
     },
     "prettyhtml": {
       "printWidth": 120, // No line exceeds 120 characters
-      "singleQuote": false, // Prefer double quotes over single quotes
+      "singleQuote": false // Prefer double quotes over single quotes
     }
   },
   "window.zoomLevel": 0,
   "workbench.editor.enablePreview": false,
+  "vetur.format.defaultFormatter.html": "prettier",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.largeFileOptimizations": false,
@@ -140,8 +151,13 @@
     "foreground": "green",
     "type": "none"
   },
-  "workbench.colorTheme": "One Monokai",
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "workbench.colorTheme": "One Dark Pro Italic",
+  "eslint.packageManager": "yarn",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "cSpell.userWords": ["array", "param", "return", "string"],
+  "todo-tree.tree.showScanModeButton": false,
+  "kite.showWelcomeNotificationOnStartup": false
 }
